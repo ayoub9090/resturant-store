@@ -1,0 +1,411 @@
+.cart{
+
+    @include border-shadow;
+
+    margin-bottom:20px;  
+
+  
+    &.empty{
+        text-align: center;
+        img{
+            filter: grayscale(100%);
+        }
+        a{
+            color: rgba(112, 112, 112, 1);
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom:10px;
+            margin-top:10px;
+        }
+
+        @media(min-width:992px){
+            position: sticky;
+            top: 80px;
+             
+        }
+    }
+    
+    .main-title{
+        border-bottom: 1px solid rgba(112 ,112 ,112 , 0.5);
+        padding-bottom:10px;
+        span{
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+
+    .w-5{
+        width:30px;
+    }
+
+    &-details{
+        margin-bottom:1em;
+      
+        &--info{
+            font-size: 14px;
+            opacity:0.7;
+            color:#000;
+            line-height: 1.22em;
+            span{
+            display: block;
+            }
+        }
+    }
+    .remove{
+        color:#000;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .close{
+        display: none;
+    }
+
+
+@media(min-width:992px){
+    &:not(.empty){
+        position:  relative!important;
+    }
+    opacity: 1 !important;
+    
+    display: block !important;
+    z-index: 0 !important;
+    height: auto !important;
+    .modal-dialog{
+        position: relative !important;
+        left: 0 !important;
+        width: 100% !important;
+        right: 0 !important;
+    }
+    .modal-content{
+        border:0;
+    }
+    .modal-body{
+        margin-bottom: 0 !important;
+    }
+    .modal-footer{
+        position: relative !important;
+        box-shadow: none !important;
+        padding:0 !important;
+        border: 0 !important;
+    }
+    .modal-body{
+        padding:0 !important;
+        height: auto !important;
+    }
+}
+
+    /**cart mobile move**/
+    @media(max-width:991px){
+        left:-100%;
+        bottom: 0;
+        margin: 0 !important;
+        width:100%;
+        padding:0;
+        background-color:transparent;
+        border:0;
+        box-shadow: none;
+        .modal-header .mr-auto{
+            margin-right:auto;
+            
+        }
+        .close{
+            display: block;
+            background: transparent;
+            outline: 0;
+            border: 0;
+            color: #434749;
+            opacity: 1;
+            margin: 0;
+            padding: 0.5rem;
+            background: #fff;
+            border: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            font-size: 22px;
+            line-height: 1;
+        }
+        .main-title{
+            padding: 1rem 1rem; 
+           background-color: #fff;
+           
+        }
+        .modal-dialog{
+            background-color: white;
+        }
+        .cart-content{
+            height: calc(100vh - 158px);
+            padding: 1rem 1rem; 
+            padding-bottom: 20px;
+            overflow: auto;
+            width: 100%;
+            
+            
+        }
+        .cart-actions{
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            padding:1.2em;
+            background: #fff;
+            box-shadow:0px 0 3px rgba(0,0,0,0.8);
+            flex-wrap: nowrap !important;
+            button{
+                width:48%;
+                margin-top:0 !important;
+                font-size: 14px;
+            }
+        }
+    }
+} 
+.ordering-methods{
+    .form{
+        display: flex;
+    }
+    .form  input{
+        display: none;
+    }
+
+    .form label{
+        position: relative;
+        color: #184a96;
+        background-color: #fff;
+        font-size: 16px;
+        text-align: center;
+        width:calc(100% / 3);
+        cursor: pointer;
+        border: 1px solid #184a96;
+        opacity:0.7;
+       transition: all 0.2s;
+        box-sizing: border-box;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        &:nth-of-type(2){
+            border-left:0;
+            border-right:0;
+        }
+    }
+
+    .form  input:checked + label{
+        opacity: 1;
+        border: 1px solid #184a96;
+        background-color: #184a96;
+        color:#fff;
+    }
+
+
+
+
+}
+.nav-customer-information{
+    display: flex;
+    li{
+        width:calc(100% / 3);
+        button{
+            width:100%;
+           border:0;
+           border-bottom:1px solid #1f1f1f;
+           background-color: transparent;
+           opacity:0.6;
+           outline: 0;
+           color:#000;
+           &.active{
+               opacity:1;
+               font-weight: 700;
+               border-bottom:2px solid #1f1f1f;
+               color: #000;
+           }
+        }
+        &:nth-of-type(2){
+            button{
+                border-left:0;
+                border-right:0;
+            }
+        }
+    }
+}
+
+
+.tab-customer-information{
+    .sub-title{
+        font-size: 16px;
+    }
+}
+
+
+
+.radioGrid{
+    .form{
+        display: flex;
+        justify-content: space-between;
+    }
+    .form  input{
+        display: none;
+    }
+
+    .form label{
+        position: relative;
+        color: #0c0c0c;
+        background-color: #fff;
+        font-size: 14px;
+        text-align: center;
+        width:calc(100% / 2 - 5px);
+        cursor: pointer;
+        border: 2px solid #0c0c0c;
+        opacity:0.56;
+        transition: all 0.2s;
+        box-sizing: border-box;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        border-radius: 4px;
+        font-weight: 700;
+        margin-bottom:0.3em;
+    }
+
+    .form  input:checked + label{
+        opacity: 1;
+        border: 2px solid #0062a2;
+        background-color: #fff;
+        color:#0062a2;
+    }
+}
+
+
+.checkboxGrid{
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left:-10px;
+        margin-right:-10px;
+    }
+    div{
+        flex: 1 1 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .form  input{
+        display: none;
+    }
+
+    .form label{
+        position: relative;
+        color: #0c0c0c;
+        background-color: #fff;
+        font-size: 14px;
+        text-align: center;
+        width:100%;
+        cursor: pointer;
+        border: 2px solid #0c0c0c;
+        opacity:0.56;
+        transition: all 0.2s;
+        box-sizing: border-box;
+        padding-top: 0.44em;
+        padding-bottom: 0.44em;
+        border-radius: 4px;
+        font-weight: 700;
+        margin-bottom:0.4em;
+    }
+
+    .form  input:checked + label{
+        opacity: 1;
+        border: 2px solid #0062a2;
+        background-color: #fff;
+        color:#0062a2;
+    }
+}
+
+.accordion-item{
+    border:0;
+    .accordion-button{
+        padding-left:0;
+        padding-right:0;
+        padding-bottom:0.5em;
+        padding-top:0.5em;
+        background-color: transparent;
+        box-shadow: none;
+        color:#000;
+    }
+    .accordion-body {
+        padding: 1rem 0rem;
+    }
+}
+
+
+#pickTimeDatepicker .datepicker-inline {
+    width: 100%;
+    @include border-shadow;
+
+    .datepicker-switch{
+        font-weight: 700;
+    }
+
+    table{
+        thead{
+            tr{
+                th{
+                    
+                    padding-bottom:10px;
+                }
+            }
+        }
+        th{
+            font-weight: normal;
+        }
+        tr{
+            td{
+                padding-top:5px;
+                padding-bottom:5px;
+                font-size: 14px;
+            }
+        }
+    }
+   
+}
+
+
+.datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker tfoot tr th:hover{
+    background: transparent;
+}
+
+#pickTimeDatepicker .datepicker table {
+    width: 100%;
+}
+
+
+.cart-mobile{
+    display: none;
+    background: #fff;
+    color: #000;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    box-shadow:0px 0 3px rgba(0,0,0,0.8);
+    button{
+        background: white;
+        span{
+            display: inline-block;
+        }
+    }
+    .label{
+        &-price{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span{
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    @media(max-width:991px){
+        display: block;
+    }
+    @media(min-width:992px){
+        display: none !important;
+    }
+}

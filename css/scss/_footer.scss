@@ -1,0 +1,122 @@
+.footer{
+    background: #0062A2;
+    padding-top: 3.5em;
+    padding-bottom: 1.5em;
+    color:white;
+    background-image:url(../img/footer_cover.svg);
+    background-repeat: no-repeat;
+
+    &-logo{
+        margin-bottom:2em;
+        img{
+            max-width: 100%;
+        }
+    }
+    &-box{
+        display: flex;
+        .title{
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &--icon{
+            font-size: 28px;
+            padding-right:10px;
+            line-height: 1;
+        }
+        &--border{
+            border: 1px solid rgba(255 ,255 ,255, 0.7);
+            border-radius: 4px;
+            padding: 15px;
+            font-size: 14px;
+
+        }
+        .blur{
+            opacity: 0.8;
+        }
+    }
+    .map{
+        &-placeholder{
+            width:100%;
+        }
+        &-indicators{
+            font-size: 16px;
+            margin-top:0.8em;
+
+            @media(max-width:992px){
+                &>div{
+                    margin-bottom:10px;
+                }
+                font-size: 14px;
+            }
+
+            .kicon{
+                font-size: 28px;
+                vertical-align: middle;
+            }
+            .circle{
+                border-radius: 50%;
+                width:24px;
+                height:24px;
+                vertical-align: middle;
+                display: inline-block;
+                border:1px solid white;
+                margin-right:5px;
+
+                &.green{
+                    background:#11D192;
+                }
+                &.dark-green{
+                    background:#02A9A9;
+                }
+                &.blue{
+                    background:#1131D1;
+                }
+            }
+        }
+    }
+
+
+.full-height{
+    @media(min-width:768px){
+        min-height: 100%;
+    }
+}
+
+
+.rest-height{
+    @media(min-width:768px){
+        min-height: 55%;
+    }
+}
+
+}
+
+.footer-white-row{
+    background:white;
+    color:#000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em 1em;
+    img{
+        max-width: 100%;
+        width:244px;
+        @media(max-width:767px){
+            width:192px;
+        }
+    }
+
+
+        a{
+            display: inline-block;
+        }
+    span{
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 700;
+        margin-right:20px;
+        @media(max-width:767px){
+            font-size: 18px;
+        }
+    }
+}

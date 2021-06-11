@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+body.ltr {
+    direction: ltr;
+    text-align: left;
+}
+body{
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+}
+.item-details span {
+    display: inline-block;
+}
+.ms-auto {
+    margin-right: auto!important;
+    margin-left:0 !important;
+}
+.sideNav .modal-title {
+    margin-right: 0;
+    margin-left:auto;
+}
+.text-right{
+    text-align:left;
+}
+.masthead-info--details .reviews{
+    display: inline-block;
+}
+
+.footer-box--icon {
+    padding-right: auto;
+    padding-left:10px;
+}
+
+.footer-white-row span{
+    margin-left:20px;
+    margin-right:0;
+}
+
+/**********Sidenav**********/
+.modal.left.fade.show .modal-dialog {
+    left: auto;
+    right:0;
+}
+.modal.left.fade .modal-dialog{
+    left:auto;
+    right:-420px;
+}
+.sideNav .close{
+    transform: scaleX(-1);
+}
+.modal-content{
+    border:0;
+}
+
+
+
+.accordion-button::after{
+    margin-right: auto;
+    margin-left: 0;
+}
+
+
+label.checkboxStyle,
+label.radioStyle{
+    flex-direction: row-reverse;
+}
+label.checkboxStyle span:before,
+label.radioStyle span:before{
+    margin-left: 6px;
+    margin-right:0;
+}
+
+.form-group .icon button{
+    right:Auto;
+    left: 0;
+    .kicon{
+        transform: scaleX(-1);
+    }
+}
+
+.nav-customer-information{
+    padding:0;
+}
+
+.select2-selection__rendered,
+.select2-results__option span{
+    display: flex !important;
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+.ltr-keep{
+    direction: ltr;
+}
+
+.switch::before{
+    left:0;
+}
+
+.number-spinner .number{
+    display: inline-flex;
+    align-items: center;
+    input{
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        @media(max-width:767px){
+            margin-bottom:6px;
+        }
+    }
+}
+
+
+@media (max-width: 991px){
+    .cart .modal-header .mr-auto{
+        margin-left:auto;
+        margin-right:0;
+    }
+    .cart.show {
+        left: auto;
+        right:0;
+    }
+    .cart{
+        right:-100%;
+        left:auto;
+        .close{
+            transform: scaleX(-1);
+        }
+}
+}

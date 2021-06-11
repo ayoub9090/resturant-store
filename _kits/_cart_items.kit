@@ -1,0 +1,81 @@
+<div class="cart mt-2 modal left fade "  id="cart" role="dialog" aria-labelledby="cartLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+    <h3 class="mb-3 main-title modal-header">
+         <!--mobile close-->
+         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><i class="kicon icon-arrow-left"></i></button>
+   
+       <div class="mr-auto"> My Cart <span>(2 items)</span> </div>
+    </h3>
+    <div class="cart-content modal-body">
+            <!-- @import './_cart_details.kit' -->
+            <!-- @import './_cart_details.kit' -->
+            <!-- @import './_cart_details.kit' -->
+
+            <div class="ordering-methods form-group">
+                <label class="sub-title regular">Ordering Method</label>
+                <div class="form">                
+                    <input type="radio" name="radio1" id="Pickup" value="Pickup" checked><label for="Pickup">Pickup</label>
+                    <input type="radio" name="radio1" id="Delivery" value="Delivery"><label for="Delivery">Delivery </label>
+                    <input type="radio" name="radio1" id="Dine in" value="Dine in"><label  for="Dine in">Dine in</label>
+                </div>
+            </div>
+
+           
+
+
+        <!--delevry box-->
+             <!-- @import './_delevry_box.kit' -->
+        <!--#END# delevry box-->
+
+        <!--extra box box-->
+        <div class="w-100 extra-box">
+            <div class="form-group">
+                <label class="sub-title regular ">Special note (Optional)</label>
+                <input type="text" value="" placeholder="Write here" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label class="sub-title regular ">Promo code</label>
+                <div class="icon">
+                    <input type="text" value="" placeholder="Write here" class="form-control" />
+                    <button class="fill"><i class="kicon icon-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!--#END#extra box box-->
+
+        <!-- Customer information -->
+              <!-- @import './_customer_information.kit' -->
+        <!-- #END# Customer information -->
+
+
+
+        <hr />
+
+        <div class="d-flex justify-content-between">
+            <label class="sub-title regular">Sub-total </label>
+            <label class="sub-title">41.25 Jd</label>
+        </div>
+  
+        <div class="d-flex justify-content-between">
+            <label class="sub-title regular">Total </label>
+            <label class="sub-title">41.25 Jd</label>
+        </div>
+        <div class="d-flex justify-content-between">
+            <label class="sub-title regular">Delivery fee </label>
+            <label class="sub-title">0.0 Jd</label>
+        </div>
+
+      
+    </div>
+    <div class="w-100 cart-actions modal-footer">
+        <button class="btn btn-block btn-empty mt-2 ">Reset</button>
+        
+        <button class="btn btn-block mt-2 btn-add">Next</button>        
+    </div>
+</div>
+</div> 
+</div>
+
+<!-- @import './_cart_mobile_sticky.kit' -->

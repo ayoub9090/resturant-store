@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: '#{$icomoon-font-family}';
+    src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7wrs2e');
+    src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7wrs2e#iefix') format('embedded-opentype'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?7wrs2e') format('truetype'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?7wrs2e') format('woff'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?7wrs2e##{$icomoon-font-family}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  .kicon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: '#{$icomoon-font-family}' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-shopping-cart {
+    &:before {
+      content: $icon-shopping-cart; 
+    }
+  }
+
+  
+  .icon-empty-cart {
+    &:before {
+      content: $icon-empty-cart; 
+    }
+  }
+
+  .icon-rice {
+    &:before {
+      content: $icon-rice; 
+    }
+  }
+  .icon-sea_food {
+    &:before {
+      content: $icon-sea_food; 
+    }
+  }
+  .icon-offer {
+    &:before {
+      content: $icon-offer; 
+    }
+  }
+
+  .icon-search-line {
+    &:before {
+      content: $icon-search-line; 
+    }
+  }
+   
+.icon-star_half {
+  &:before {
+    content: $icon-star_half; 
+  }
+}
+.icon-star_full {
+  &:before {
+    content: $icon-star_full; 
+  }
+}
+  .icon-drop-down {
+    &:before {
+      content: $icon-drop-down; 
+    }
+  }
+  .icon-arrow-right {
+    &:before {
+      content: $icon-arrow-right; 
+    }
+  }
+  .icon-recycle {
+    &:before {
+      content: $icon-recycle; 
+    }
+  }
+  .icon-arrow-left {
+    &:before {
+      content: $icon-arrow-left; 
+    }
+  }
+  .icon-remove {
+    &:before {
+      content: $icon-remove; 
+    }
+  }
+  .icon-plus {
+    &:before {
+      content: $icon-plus; 
+    }
+  }
+  .icon-map-pin-fill {
+    &:before {
+      content: $icon-map-pin-fill; 
+    }
+  }
+  .icon-schedule {
+    &:before {
+      content: $icon-schedule; 
+    }
+  }
+  .icon-local_atm_black_24dp-1 {
+    &:before {
+      content: $icon-local_atm_black_24dp-1; 
+    }
+  }
+  .icon-reservation {
+    &:before {
+      content: $icon-reservation; 
+    }
+  }
+  .icon-money {
+    &:before {
+      content: $icon-money; 
+    }
+  }
+  .icon-local_phone {
+    &:before {
+      content: $icon-local_phone; 
+    }
+  }
+  .icon-Intersection {
+    &:before {
+      content: $icon-Intersection; 
+    }
+  }
+  .icon-shopping_bag {
+    &:before {
+      content: $icon-shopping_bag; 
+    }
+  }
+  .icon-local_atm {
+    &:before {
+      content: $icon-local_atm; 
+    }
+  }
+  .icon-icecream {
+    &:before {
+      content: $icon-icecream; 
+    }
+  }
+  .icon-bakery_dining {
+    &:before {
+      content: $icon-bakery_dining; 
+    }
+  }
+  .icon-ramen_dining {
+    &:before {
+      content: $icon-ramen_dining; 
+    }
+  }
+  .icon-lunch_dining {
+    &:before {
+      content: $icon-lunch_dining; 
+    }
+  }
+  .icon-pizza {
+    &:before {
+      content: $icon-pizza; 
+    }
+  }
+  .icon-delivery_dining {
+    &:before {
+      content: $icon-delivery_dining; 
+    }
+  }
+  .icon-check {
+    &:before {
+      content: $icon-check; 
+    }
+  }
+  
+  

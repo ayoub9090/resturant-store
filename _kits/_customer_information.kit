@@ -1,0 +1,154 @@
+<div class="customer-information">
+    <label class="sub-title regular mb-2">Customer information </label>
+
+    <ul class="nav nav-customer-information mb-3" id="information-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="Info-tab" data-bs-toggle="pill" data-bs-target="#Info" type="button" role="tab" aria-controls="Info" aria-selected="true">Info</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Time-tab" data-bs-toggle="pill" data-bs-target="#Time" type="button" role="tab" aria-controls="Time" aria-selected="false">Time</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Payment-tab" data-bs-toggle="pill" data-bs-target="#Payment" type="button" role="tab" aria-controls="Payment" aria-selected="false">Payment</button>
+        </li>
+      </ul>
+     
+        
+        <!--Information group-->
+        <div class="tab-content" id="information-tabContent">
+        <div class="tab-pane tab-customer-information fade show active" id="Info" role="tabpanel" aria-labelledby="Info-tab">
+                <label class="sub-title f14 mb-2">Personal information</label>
+                <div class="form-group">
+                    <label class="sub-title regular ">Full name</label>
+                    <input type="text" value="" placeholder="Write here" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="sub-title regular ">Email</label>
+                    <input type="text" value="" placeholder="name@dominname.com" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="sub-title regular ">Phone number</label>
+                    <div class="ltr-keep  d-flex justify-content-around gap-2">
+                        <div class="w-50">
+                        <select title="" class="selectpicker form-control">
+                            <option data-img="./img/flag.png" >+962</option>
+                            <option data-img="./img/flag.png" >+962</option>
+                            <option data-img="./img/flag.png" >+962</option>
+                          </select>
+                        </div>
+                        <div class="w-100">
+                            <input type="text" value="" placeholder="79 (-,-,-) (-,-) (-,-)" class="form-control" />
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+        <!--#END# Information group-->
+
+        <!--Time group-->
+        <div class="tab-pane fade " id="Time" role="tabpanel" aria-labelledby="Time-tab">
+            <label class="sub-title f14 mb-2">Choose a time</label>
+            <div class="d-flex justify-content-between align-items-center mb-1">
+                <label class="mb-0">
+                    <span>As soon as possible </span>
+                </label>
+                <div class="radio-toggle">
+                    <input class="switch" name="time-toggle" type="radio"  />
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <label class="mb-0 sub-title">
+                    <span>Later </span>
+                </label>
+                <div class="radio-toggle">
+                    <input class="switch" name="time-toggle"  type="radio" checked />
+                </div>
+            </div>
+
+             <!--Accordion-->
+             <div class="accordion mt-3" id="accordionTime">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        When to deliver your food?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionTime">
+                    <div class="accordion-body">
+                        <div class="radioGrid">
+                            <div class="form">                
+                                <input type="radio" name="radio2" id="Today" value="Today"><label for="Today">Today</label>
+                                <input type="radio" name="radio2" id="Tomorrow " value="Tomorrow " checked=""><label for="Tomorrow ">Tomorrow </label>    
+                            </div>
+                        </div>
+
+                        <div id="pickTimeDatepicker" data-date="12/06/2021" class="w-100 mt-3"></div>
+                        <input type="hidden" id="pickTimeDatepicker_input">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        At what time?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionTime">
+                    <div class="accordion-body">
+                        <div class="checkboxGrid">
+                            <div class="form">                
+                                <div><input type="checkbox" name="checkbox1" id="1" value=""><label for="1">10:00 - 10:30 am</label></div>
+                                <div><input type="checkbox" name="checkbox1" id="2" value="" ><label for="2">11:00-11:30 am </label></div>
+                                <div><input type="checkbox" name="checkbox1" id="3" value="" ><label for="3">12:00-12:30 pm </label></div>
+                                <div><input type="checkbox" name="checkbox1" id="4" value="" checked=""><label for="4">13:00-13:30 pm </label></div>
+                                <div><input type="checkbox" name="checkbox1" id="5" value="" checked=""><label for="5">14:00-14:30 pm </label></div>
+                                <div><input type="checkbox" name="checkbox1" id="6" value=""><label for="6">10:00 - 10:30 am</label></div>
+                                <div><input type="checkbox" name="checkbox1" id="7" value="" ><label for="7">11:00-11:30 am </label></div>
+                                <div><input type="checkbox" name="checkbox1" id="8" value="" ><label for="8">12:00-12:30 pm </label></div>
+                                <div><input type="checkbox" name="checkbox1" id="9" value="" checked=""><label for="9">13:00-13:30 pm </label></div>
+                                <div><input type="checkbox" name="checkbox1" id="10" value="" ><label for="10">14:00-14:30 pm </label></div>
+                                <div><input type="checkbox" name="checkbox1" id="11" value="" ><label for="11">13:00-13:30 pm </label></div>
+                                <div><input type="checkbox" name="checkbox1" id="12" value="" checked=""><label for="12">14:00-14:30 pm </label></div>
+                                <div><input type="checkbox" name="checkbox1" id="13" value="" ><label for="13">13:00-13:30 pm </label></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+              <!--#END# Accordion-->
+        </div>
+        <!--#END# Time group-->
+
+        <!--Payment group-->
+        <div class="tab-pane fade" id="Payment" role="tabpanel" aria-labelledby="Payment-tab">
+            <label class="sub-title f14 mb-2">Payment </label>
+            
+            <div class="d-flex justify-content-between align-items-center mb-1">
+                <label class="mb-0">
+                    <span>Cash </span>
+                </label>
+                <div class="radio-toggle">
+                    <input class="switch" name="payment-toggle" type="radio"  />
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-1">
+                <label class="mb-0 sub-title">
+                    <span>Card </span>
+                </label>
+                <div class="radio-toggle">
+                    <input class="switch" name="payment-toggle" type="radio" checked  />
+                </div>
+            </div>
+        </div>
+        <!--#END# Payment group-->
+
+
+      </div>
+
+   
+</div>

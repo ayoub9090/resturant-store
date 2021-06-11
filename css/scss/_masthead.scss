@@ -1,0 +1,95 @@
+.masthead{
+    min-height: 385px;
+    width:100%;
+    position: relative;
+    background-image: linear-gradient(to top, #0062a2, rgba(0, 49, 81, 0));
+    align-items: flex-end;
+    padding-bottom:2em;
+    &-cover{
+        position: absolute;
+        width:100%;
+        height:100%;
+        z-index: -1;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        @media(max-width:767px){
+            object-fit: cover;
+        }
+    }
+  
+    &-info{
+        &--logo{
+            
+            overflow: hidden;
+            @media(max-width:767px){
+                max-width: 162px;
+                margin-bottom:1em;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            img{
+                max-width:100%;
+                border-radius: 4px;
+            }
+        }
+        &--details{
+               padding-left: 15px;
+               padding-right: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            .title{
+                font-weight: 700;
+                font-size: 30px;
+                @media(max-width:767px){
+                    font-size: 24px;
+                }
+                @media(min-width:768px){
+                    width:320px;
+                }
+            }
+            .hashtags{
+                opacity:0.8;
+                margin-bottom:0;
+                @media(max-width:767px){
+                    margin-top:0.5em;
+                 
+                }
+            }
+            .reviews{
+                font-size: 16px;
+                vertical-align: middle;
+                opacity: 0.8;
+            }
+            .kicon{
+                font-size: 24px;
+                vertical-align: middle;
+            }
+        }
+
+
+        @media(max-width:767px){
+            flex-direction: column;
+            padding-top: 2em;
+        }
+
+    }
+
+    .star-ratings-css {
+        position: relative;
+
+      span{
+          color:#F8C90C;
+      }
+        @media(max-width:992px){
+            margin-top:0.5em;
+            margin-bottom:0.5em;
+        }
+    
+       
+      }
+      
+
+}

@@ -1,0 +1,16 @@
+body.ltr {
+  direction: ltr;
+  text-align: left; }
+
+.white-logo {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); }
+
+body:not(.startSticky):not(.staticHeader) .navbar .colored-logo {
+  width: 280px; }
+  @media (max-width: 767px) {
+    body:not(.startSticky):not(.staticHeader) .navbar .colored-logo {
+      width: 102px; } }
+  @media (max-width: 992px) and (min-width: 768px) {
+    body:not(.startSticky):not(.staticHeader) .navbar .colored-logo {
+      width: 180px; } }

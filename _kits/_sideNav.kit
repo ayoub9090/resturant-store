@@ -1,0 +1,95 @@
+<!-- Modal -->
+<div class="modal left fade sideNav" id="sideNav"  tabindex="-1" role="dialog" aria-labelledby="sideNavLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close " data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="kicon icon-arrow-left"></i></span></button>
+                <h4 class="modal-title main-title  mr-auto" id="sideNavLabel">Adding item</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="w-100">
+                    <img src="./img/burger-sample.jpg" class="sideNav-photo" alt="" />
+                </div>
+                <div class="row align-items-center mt-2">
+                    <div class="col-6">
+                        <h6 class="sub-title">Star meal</h6>
+                    </div>
+                    <div class="col-6 text-right">
+                        <label class="label-price">3.45 Jd</label>
+                    </div>
+                </div>
+                <p class="mb-4">
+                    Fresh Beef, Lettuce, Tomatoes, Pickles, Fried Onion Rings, Swiss Cheese, Beef Bacon, White Mushroom Sauce, Burgerizz Sauce.
+                </p>
+                <form>
+                    <h6 class="sub-title mt-3">Size</h6>
+
+                    <div class="d-flex justify-content-between">
+                        <label class="radioStyle">
+                            <input type="radio" name="radio" checked/>
+                            <span>300 Grams</span>
+                        </label>
+                        <label class="label-price">3.75 jd</label>
+                    </div>
+                
+                    <div class="d-flex justify-content-between">
+                        <label class="radioStyle">
+                            <input type="radio" name="radio" checked/>
+                            <span>150 Grams</span>
+                        </label>
+                        <label class="label-price">2.75 jd</label>
+                    </div>
+
+                    <h6 class="sub-title mt-3">Fries (optional)</h6>
+
+                    <div class="d-flex justify-content-between">
+                      
+                          
+                        <label class="checkboxStyle">
+                            <input type="checkbox" name="checkbox" />
+                            <span>French fries </span>
+                        </label>
+                        
+                        <label class="label-price">Free</label>
+                    </div>
+                
+                    <div class="d-flex justify-content-between">
+                        <label class="checkboxStyle">
+                            <input type="checkbox" name="checkbox" checked/>
+                            <span>Wedges potato</span>
+                        </label>
+                        <label class="label-price">+0.5 jd</label>
+                    </div>
+
+                    <h6 class="sub-title mt-3">Special Instructions (optional)</h6>
+                    <div class="d-flex justify-content-between">
+                        <textarea class="form-control"></textarea>
+                    </div>
+
+                </form>
+
+
+            </div>
+            <div class="modal-footer">
+                <div class="row w-100 align-items-center">
+                    <div class="col-6 text-center">
+                        <div class="number-spinner">
+                            <div class="number">
+                                <span class="minus"><i class="kicon icon-remove"></i></span>
+                                <input type="text" value="0">
+                                <span class="plus"><i class="kicon icon-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                 <div class="col-6">
+                    <button class="btn btn-block btn-add" ><span>Add</span></button>
+                 </div>
+                    
+                </div>
+            </div>
+
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div><!-- modal -->
