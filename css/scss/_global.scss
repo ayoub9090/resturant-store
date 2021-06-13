@@ -122,6 +122,10 @@ form .label-price{
             margin-left:5px;
             span{
                 vertical-align: middle;
+                @media(max-width:767px){
+                    width:100%;
+                    display: block; 
+             }
             }
 
             .offer{

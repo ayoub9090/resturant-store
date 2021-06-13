@@ -1,0 +1,92 @@
+.footer {
+  background: #0062A2;
+  padding-top: 3.5em;
+  padding-bottom: 1.5em;
+  color: white;
+  background-image: url(../img/footer_cover.svg);
+  background-repeat: no-repeat; }
+  .footer-logo {
+    margin-bottom: 2em; }
+    .footer-logo img {
+      max-width: 100%; }
+  .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .footer-box .title {
+      font-size: 16px;
+      font-weight: 700; }
+    .footer-box--icon {
+      font-size: 28px;
+      padding-right: 10px;
+      line-height: 1; }
+    .footer-box--border {
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 4px;
+      padding: 15px;
+      font-size: 14px; }
+    .footer-box .blur {
+      opacity: 0.8; }
+  .footer .map-placeholder {
+    width: 100%; }
+  .footer .map-indicators {
+    font-size: 16px;
+    margin-top: 0.8em; }
+    @media (max-width: 992px) {
+      .footer .map-indicators {
+        font-size: 14px; }
+        .footer .map-indicators > div {
+          margin-bottom: 10px; } }
+    .footer .map-indicators .kicon {
+      font-size: 28px;
+      vertical-align: middle; }
+    .footer .map-indicators .circle {
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      display: inline-block;
+      border: 1px solid white;
+      margin-right: 5px; }
+      .footer .map-indicators .circle.green {
+        background: #11D192; }
+      .footer .map-indicators .circle.dark-green {
+        background: #02A9A9; }
+      .footer .map-indicators .circle.blue {
+        background: #1131D1; }
+  @media (min-width: 768px) {
+    .footer .full-height {
+      min-height: 100%; } }
+  @media (min-width: 768px) {
+    .footer .rest-height {
+      min-height: 55%; } }
+
+.footer-white-row {
+  background: white;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1.5em 1em; }
+  .footer-white-row img {
+    max-width: 100%;
+    width: 244px; }
+    @media (max-width: 767px) {
+      .footer-white-row img {
+        width: 192px; } }
+  .footer-white-row a {
+    display: inline-block; }
+  .footer-white-row span {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 20px; }
+    @media (max-width: 767px) {
+      .footer-white-row span {
+        font-size: 18px; } }
